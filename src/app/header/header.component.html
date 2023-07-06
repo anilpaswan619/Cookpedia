@@ -3,7 +3,7 @@
         <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed">
           <span class="navbar-toggler-icon" *ngFor="let iconBar of [1]"></span>
         </button>
-        <a routerLink="/" class="navbar-brand m-5">Recipe Book</a>
+        <a routerLink="/" class="navbar-brand m-5">Recipe Catalog</a>
       </div>
       <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
