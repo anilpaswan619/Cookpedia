@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'YourFontName';
+  src: url('path/to/font.woff2') format('woff2'),
+       url('path/to/font.woff') format('woff'),
+       url('path/to/font.ttf') format('truetype');
+  /* Additional font properties */
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --primary-color: #FF0000;
+  --secondary-color: #00FF00;
+  --background-color: #FFFFFF;
+}
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+
+body {
+  font-family: 'YourFontName', sans-serif;
+}
+
 .recipe-img-size {
     max-width: 50%;
     border-radius: 0.75rem;
@@ -15,7 +46,8 @@
   color: #fff;
  }
  .navbar-header-text:hover{
-  color: #0c9a62;
+  background-color: white;
+  color: #295846;
  }
  .btn{
   color: var(--bs-btn-hover-color);
