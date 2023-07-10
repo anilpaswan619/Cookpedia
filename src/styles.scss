@@ -74,7 +74,7 @@ body {
   padding-bottom: 4rem;
 }
 .hero-image-size {
-  width: 100%;
+  width: 114%;
 }
 .hero-text {
   font-size: 4rem;
@@ -100,3 +100,15 @@ body {
   color: #295846;
   border-radius: 8px;
  }
+
+.search-input-field {
+  display: block;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  width: 97%;
+  border: 3px solid #b9c0bd;
+}
+.search-input-field-d-none {
+  display: none;
+}
