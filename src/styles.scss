@@ -106,9 +106,10 @@ body {
   border-radius: 5px;
   outline: none;
   padding: 5px;
-  width: 97%;
+  width: 98%;
   border: 3px solid #b9c0bd;
 }
-.search-input-field-d-none {
-  display: none;
+.search-input-field:focus {
+  border-color: #ffc107;
+
 }
