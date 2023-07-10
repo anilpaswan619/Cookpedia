@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12 text-center">
      <app-recipes-detail *ngIf = "selectedRecipe; else TextContent" [recipe]="selectedRecipe" ></app-recipes-detail>
      <ng-template #TextContent>
        <p class="mt-5">Please select a recipe to manage it.</p>  
