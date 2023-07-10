@@ -1,4 +1,4 @@
-Here's the live site https://cookpedia-anil.vercel.app
+Here's the live hosted site https://cookpedia-anil.vercel.app
 
 # DineInOut
 
