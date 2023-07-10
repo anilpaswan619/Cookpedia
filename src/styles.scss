@@ -15,15 +15,18 @@ body {
   --primary-color: #295846;
   --secondary-color: #0b9a62;
   --tertiary-color: #87a99b;
-  --other-color1: #bce8db;
+  --other-color1: #292929;
+  --other-color2: #888888;
 }
 
 .recipe-img-size {
-    max-width: 50%;
-    border-radius: 0.75rem;
+  max-width: 24rem;
+  border-radius: 0.75rem;
+  height: 24rem;
+  object-fit: cover;
  }
  .recipe-img-detail-size {
-   max-width: 80%;
+   max-width: 60%;
    border-radius: 0.75rem;
  }
  .header-bg {
@@ -107,9 +110,47 @@ body {
   outline: none;
   padding: 5px;
   width: 98%;
-  border: 3px solid #b9c0bd;
+  border: 2px solid #b9c0bd;
 }
 .search-input-field:focus {
   border-color: #ffc107;
 
+}
+.empty-space-20 {
+  margin-top: 2rem;
+}
+.empty-space-30 {
+  margin-top: 3rem;
+}
+.empty-space-40 {
+  margin-top: 6rem;
+}
+.empty-space-50 {
+  margin-top: 8rem;
+}
+.header-text-h1 {
+  font-size: 2.7rem;
+  color: var(--other-color1);
+}
+.header-para {
+  color: var(--other-color2);
+  font-size: 1.35rem;
+}
+.see-all-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.see-all-link:hover {
+  color: #14b470;
+}
+.recipe-name {
+  color: var(--other-color1);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.recipe-author {
+  color: var(--other-color2);
+  font-size: 1.1rem;
 }

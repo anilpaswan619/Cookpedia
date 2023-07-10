@@ -1,12 +1,21 @@
+<div class="empty-space-40"></div>
 <div class="row">
-    <div class="col-xs-12 mt-4">
-        <h1 class="fw-bold">Popular Recipes Of The Week</h1>
-        <p>Our most popular recipes of this week</p>
+    <div class="col-md-10 col-xs-12">
+        <h1 class="fw-bold header-text-h1">Popular Recipes Of The Week</h1>
+        <p class="header-para mt-1 pb-3">Our most popular recipes of this week</p>
+    </div>
+    <div class="col-md-2 col-xs-12 d-flex justify-content-end">
+       <a href="#" class="see-all-link" title="Click for more...">See all</a>
     </div>
 </div>
-<hr>
+
 <div class="row">
     <div class="col-xs-12">
-        <app-recipes-item *ngFor="let recipeEL of recipes" [recipe]="recipeEL" (recipeSelected)="onRecipeSelected(recipeEL)" ></app-recipes-item>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let recipeEL of recipes">
+          <app-recipes-item [recipe]="recipeEL" (recipeSelected)="onRecipeSelected(recipeEL)"></app-recipes-item>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
