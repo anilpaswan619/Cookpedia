@@ -11,6 +11,8 @@ export class HeaderComponent {
     collapsed = true;
   @Output() featureSelector = new EventEmitter<string>();
 
+  
+
     onSelect(featureSelected : string){
         this.featureSelector.emit(featureSelected);
     }
