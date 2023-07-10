@@ -24,6 +24,7 @@ body {
   border-radius: 1rem;
   height: 23rem;
   object-fit: cover;
+  width: 100%;
  }
  .recipe-img-detail-size {
    max-width: 60%;
@@ -154,3 +155,5 @@ body {
   color: var(--other-color2);
   font-size: 1.4rem;
 }
+
+
