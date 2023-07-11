@@ -13,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { FormsModule } from '@angular/forms';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { MiddleSectionComponent } from './middle-section/middle-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MiddleSectionComponent } from './middle-section/middle-section.componen
     ShoppingListComponent,
     ShoppingEditComponent,
     HeroSectionComponent,
-    MiddleSectionComponent
+    MiddleSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
