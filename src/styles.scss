@@ -25,11 +25,16 @@ body {
   height: 23rem;
   object-fit: cover;
   width: 100%;
-  transition: all 200ms ease;
+  transition: transform 0.3s;
  }
  .recipe-img-size:hover {
   transform: scale(1.1);
  }
+ .recipe-img-container {
+  overflow: hidden;
+
+}
+
  .recipe-img-detail-size {
    max-width: 60%;
    border-radius: 0.75rem;
@@ -110,7 +115,7 @@ body {
  }
 
 .search-input-field {
-  padding: 6px;
+  padding: 5px;
   border: none;
   border-radius: 4px;
   background-color: #f5f5f5;
@@ -150,8 +155,6 @@ body {
   color: var(--secondary-color);
   font-size: 1.4rem;
   font-weight: 600;
-  display: inline-flex;
-  align-items: center;
 }
 .see-all-link:hover {
   color: var(--primary-color);
@@ -168,7 +171,7 @@ body {
 .middle-container-img {
   background-image: url('assets/images/middle.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: inherit;
   background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;
@@ -179,10 +182,6 @@ body {
   color: #343030;
   font-weight: 600;
 }
-a, .middle-container-content {
-  text-decoration: none;
-  position: relative;
-}
 .middle-container-content {
   margin-top:4rem;
   background-color: white;
@@ -190,34 +189,5 @@ a, .middle-container-content {
   padding:3rem;
   border: 1px solid #e6e6e6;
 }
-.middle-container-content {
-  transition: background-color 0.3s ease;
-}
-.middle-container-content:hover {
-  background-color: #198754;
-  cursor: pointer; 
-  border: none;
-}
-.middle-container-content:hover h2,
-.middle-container-content:hover p {
-  color: white;
-}
-.arrow-icon {
-  position: absolute;
-  bottom: 2rem;
-  right: 7rem;
-  width: 50px; 
-  height: 50px; 
-}
-.arrow-icon:hover {
-  transform: scale(1.1); 
-}
-.arrow-icon-green {
-  width: 40px; 
-  height: 40px; 
-  margin-left: 10px;
-}
-.arrow-icon-green:hover {
-  transform: scale(1.1); 
-}
+
 
