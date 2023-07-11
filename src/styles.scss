@@ -2,7 +2,7 @@
 
 
 @font-face {
-  font-family: roboto;
+  font-family:  Roboto;
   src: url('assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'),
        url('assets/fonts/lato/Lato-Regular.ttf') format('truetype');     
 }
@@ -25,6 +25,10 @@ body {
   height: 23rem;
   object-fit: cover;
   width: 100%;
+  transition: all 200ms ease;
+ }
+ .recipe-img-size:hover {
+  transform: scale(1.1);
  }
  .recipe-img-detail-size {
    max-width: 60%;
@@ -106,15 +110,19 @@ body {
  }
 
 .search-input-field {
-  display: block;
-  border-radius: 5px;
-  outline: none;
-  padding: 5px;
-  width: 98%;
-  border: 2px solid #b9c0bd;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 92%;
 }
 .search-input-field:focus {
-  border-color: #ffc107;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #70c1b3;
 
 }
 .empty-space-20 {
@@ -142,6 +150,8 @@ body {
   color: var(--secondary-color);
   font-size: 1.4rem;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
 }
 .see-all-link:hover {
   color: var(--primary-color);
@@ -155,5 +165,59 @@ body {
   color: var(--other-color2);
   font-size: 1.4rem;
 }
-
+.middle-container-img {
+  background-image: url('assets/images/middle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+}
+.header-text-h2 {
+  font-size: 2.4rem;
+  color: #343030;
+  font-weight: 600;
+}
+a, .middle-container-content {
+  text-decoration: none;
+  position: relative;
+}
+.middle-container-content {
+  margin-top:4rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding:3rem;
+  border: 1px solid #e6e6e6;
+}
+.middle-container-content {
+  transition: background-color 0.3s ease;
+}
+.middle-container-content:hover {
+  background-color: #198754;
+  cursor: pointer; 
+  border: 1px solid #198754;
+}
+.middle-container-content:hover h2,
+.middle-container-content:hover p {
+  color: white;
+}
+.arrow-icon {
+  position: absolute;
+  bottom: 2rem;
+  right: 7rem;
+  width: 50px; 
+  height: 50px; 
+}
+.arrow-icon:hover {
+  transform: scale(1.1); 
+}
+.arrow-icon-green {
+  width: 40px; 
+  height: 40px; 
+  margin-left: 10px;
+}
+.arrow-icon-green:hover {
+  transform: scale(1.1); 
+}
 
