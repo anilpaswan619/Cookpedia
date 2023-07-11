@@ -196,7 +196,8 @@ body {
 }
 .footer-bg-container{
   background-color: var(--primary-color);
-  height: 50vh;
+  height: 100%;
+  min-height: 65vh;
 }
 .footer-para {
   color: #b9c0bd;
@@ -233,4 +234,7 @@ body {
 hr {
   border-color: white; 
   border-width: 3px; 
+}
+ul li a {
+  text-decoration: none;
 }
