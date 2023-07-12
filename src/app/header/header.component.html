@@ -1,8 +1,8 @@
 
-<nav class="navbar navbar-expand-lg header-bg">
+<nav class="navbar navbar-expand-lg header-bg" [class.bg-change-clicked]="isNavButtonClicked">
   <div class="container">
     <div class="navbar-header d-flex">
-        <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed">
+        <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed"  (click)="toggleNavButton()">
           <span class="navbar-toggler-icon" *ngFor="let iconBar of [1]"></span>
         </button>
         <div class="brand-name-margin">

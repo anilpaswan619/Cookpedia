@@ -283,7 +283,9 @@ body {
 #scrollToTopBtn.show {
   display: block;
 }
-
+.bg-change-clicked {
+  background-color: var(--secondary-color);
+}
 
 
 
