@@ -1,4 +1,4 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-top',
@@ -7,26 +7,23 @@ import { Component, HostListener, ElementRef } from '@angular/core';
 })
 export class ScrollTopComponent {
 
-  private scrollToTopBtn: HTMLElement | null = null;
+  showScrollToTopButton: boolean = false;
 
-  constructor(private elementRef: ElementRef) {}
-
-  ngAfterViewInit() {
-    this.scrollToTopBtn = this.elementRef.nativeElement.querySelector('#scrollToTopBtn');
+  ngOnInit() {
+    this.checkScroll();
   }
 
-  @HostListener('window:scroll', [])
+  @HostListener('window:scroll')
   onWindowScroll() {
-    this.checkScrollTopVisibility();
+    this.checkScroll();
+  }
+
+  checkScroll() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.showScrollToTopButton = scrollPosition > 800;
   }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  checkScrollTopVisibility() {
-    if (this.scrollToTopBtn) {
-      this.scrollToTopBtn.style.display = window.scrollY < 20 ? 'block' : 'none';
-    }
   }
 }
