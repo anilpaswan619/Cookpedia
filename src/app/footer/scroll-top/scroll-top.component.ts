@@ -20,7 +20,7 @@ export class ScrollTopComponent {
 
   checkScroll() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.showScrollToTopButton = scrollPosition > 800;
+    this.showScrollToTopButton = scrollPosition > 1000;
   }
 
   scrollToTop() {
