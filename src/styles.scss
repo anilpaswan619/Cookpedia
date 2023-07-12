@@ -50,6 +50,7 @@ body {
  }
  .navbar-header-text {
   color: #fff;
+  padding-left: 6px;
  }
  .navbar-brand{
   color: #fff;
@@ -79,6 +80,7 @@ body {
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
+
 .navbar-toggler {
   color: white;
   border: 0px  solid white;
@@ -297,8 +299,12 @@ body {
   .search-input-field {
     display:none;
   }
+  .hero-image-size {
+    max-width: 114%;
+    width: 100%;
+  }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .hero-text-center {
     text-align: center;
   }
