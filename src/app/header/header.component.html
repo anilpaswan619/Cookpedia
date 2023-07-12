@@ -1,12 +1,15 @@
 
 <nav class="navbar navbar-expand-lg header-bg">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-header d-flex">
         <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed">
           <span class="navbar-toggler-icon" *ngFor="let iconBar of [1]"></span>
         </button>
-        <a routerLink="/" class="navbar-brand "><img src="\assets\images\chef.png" class="img-responsive img-logo-size" alt="Cookpedia"> 
-          <span class="cook-text"> Cookpedia</span></a>
+        <div class="brand-name-margin">
+          <a routerLink="/" class="navbar-brand "><img src="\assets\images\chef.png" class="img-responsive img-logo-size" alt="Cookpedia"> 
+            <span class="cook-text"> Cookpedia</span></a>
+        </div>
+        
       </div>
       <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">

@@ -252,3 +252,22 @@ body {
   display: inline-block;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .brand-name-margin{
+    margin-left: calc((100vw - 260px) / 2);
+  }
+  
+}
