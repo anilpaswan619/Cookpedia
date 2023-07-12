@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { MiddleSectionComponent } from './middle-section/middle-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { ScrollTopComponent } from './footer/scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     ShoppingEditComponent,
     HeroSectionComponent,
     MiddleSectionComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,

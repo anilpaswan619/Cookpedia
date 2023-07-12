@@ -253,6 +253,32 @@ body {
 }
 
 
+.btn-scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--tertiary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s;
+  text-align: center;
+
+}
+
+.sroller-arrow {
+ width: 20px;
+ height: 20px;
+ vertical-align: text-top;
+}
+
+.btn-scroll-top:hover {
+  opacity: 0.8;
+  background-color: var(--secondary-color);
+}
+
 
 
 
