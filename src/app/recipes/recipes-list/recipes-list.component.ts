@@ -13,7 +13,7 @@ export class RecipesListComponent implements OnInit {
   recipes: Recipe[] = [ 
     new Recipe('Vegan Soup', 'By Jeniffer Lay', '/assets/images/salad.jpg '), 
     new Recipe('Juicy Noodles', 'By Smith John', '/assets/images/noodles.jpg'),
-    new Recipe('Creamy Pancake', 'By Luise De', '/assets/images/creamy.jpg'),
+    new Recipe('Creamy Cake', 'By Luise De', '/assets/images/creamy.jpg'),
     new Recipe('Fried Beans', 'By Garry Don', '/assets/images/beans.jpg'),
     new Recipe('Cheesy Chips', 'By Charie Laos', '/assets/images/chips.jpg'),
     new Recipe('Coated Onion', 'By Anil P', '/assets/images/momos.jpg'),
