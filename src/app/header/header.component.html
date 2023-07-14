@@ -3,7 +3,8 @@
   <div class="container">
     <div class="navbar-header d-flex">
         <button type="button" class="navbar-toggler" (click)="collapsed = !collapsed"  (click)="toggleNavButton()">
-          <span class="navbar-toggler-icon" *ngFor="let iconBar of [1]"></span>
+          
+          <span class="navbar-toggler-icon" [ngClass]="{'navbar-toggler-icon-close': isNavButtonClicked}" *ngFor="let iconBar of [1]"></span>
         </button>
         <div class="brand-name-margin">
           <a routerLink="/" class="navbar-brand "><img src="\assets\images\chef.png" class="img-responsive img-logo-size" alt="Cookpedia"> 

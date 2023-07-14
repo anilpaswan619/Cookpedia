@@ -321,6 +321,16 @@ body {
 .bg-change-clicked {
   background-color: var(--secondary-color);
 }
+.navbar-toggler-icon-close {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("assets/images/cross-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
 
 
 
