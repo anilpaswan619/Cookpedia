@@ -15,6 +15,7 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { MiddleSectionComponent } from './middle-section/middle-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScrollTopComponent } from './footer/scroll-top/scroll-top.component';
+import {CarouselComponent} from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { ScrollTopComponent } from './footer/scroll-top/scroll-top.component';
     HeroSectionComponent,
     MiddleSectionComponent,
     FooterComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    CarouselComponent,
+    
   ],
   imports: [
     BrowserModule,
