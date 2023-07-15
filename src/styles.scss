@@ -20,6 +20,7 @@ body {
   --other-color1: #292929;
   --other-color2: #888888;
   --other-color3: #00ff00;
+  --other-color4: #FF8D1D;
 }
 
 
@@ -117,7 +118,7 @@ body {
 .bg-hero-section {
   background-color: var(--primary-color);
   padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 .hero-image-size {
   width: 114%;
@@ -231,8 +232,7 @@ body {
 .middle-container-content:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-  border: 1px solid #0aad0a;
-  transition: .2s;
+
 }
 
 
@@ -246,8 +246,8 @@ body {
   font-size: 1rem;
 }
 .footer-img-logo-size{
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
 }
 .cook-text-footer {
   font-size:1.7rem;
@@ -292,6 +292,10 @@ body {
 }
 .empty-space-between {
   width: 10px;
+  display: inline-block;
+}
+.empty-space-between-lg {
+  width: 3rem;
   display: inline-block;
 }
 
@@ -339,13 +343,60 @@ body {
   background-position: center;
   background-size: 100%;
 }
-.btn-scroll-top .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+.btn-scroll-top {
+ .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   vertical-align: 0;
+ }
 }
 .icon-color{
   color: var(--secondary-color);
 }
-
+.profile-img {
+  width: 4rem; 
+  height: 4rem;
+  border-radius: 50%;
+}
+.profile-name {
+  margin-left: 1rem;
+}
+.profile-name {
+  .card-title {
+    color: var(--other-color4);
+    font-weight: 600;
+  }
+  .card-text {
+    color: var(--other-color2);
+  }
+}
+.card-para {
+  color:black;
+}
+.stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+.card-image-container {
+  width:100%;
+  height: 100%;
+  .card-recipe-img {
+    border-radius: 1rem;
+  }
+}
+.comm-card-border {
+  border: none;
+}
+.recipe-icons-container {
+  .bi-hand-thumbs-up, .bi-share  {
+    color: var(--other-color2);
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  .bi-hand-thumbs-up:hover,
+   .bi-share:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+}
 
 
 
