@@ -16,7 +16,7 @@
           <div class="carousel-item" [class.active]="i === 0" [attr.data-bs-interval]="10000" *ngFor="let item of carouselItems; let i = index">
             <div class="row">
               <div class="col-md-6" *ngFor="let card of item.cards">
-                <div class="card p-5 comm-card-border">
+                <div class="card p-5 comm-card-border ">
                   <div class="card-body">
                     <div class="d-flex flex-column flex-md-row">
                       <div class="profile-img-container">
@@ -24,7 +24,7 @@
                       </div>
                       
                       <div class="profile-name">
-                        <h4 class="card-title">{{ card.title }}</h4>
+                        <h4 class="card-title text-nowrap">{{ card.title }}</h4>
                         <p class="card-text">{{ card.description }}</p>
                       </div>
                     </div>
