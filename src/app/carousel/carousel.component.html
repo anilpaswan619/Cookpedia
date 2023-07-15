@@ -18,8 +18,11 @@
               <div class="col-md-6" *ngFor="let card of item.cards">
                 <div class="card p-5 comm-card-border">
                   <div class="card-body">
-                    <div class="d-flex">
-                      <img [src]="card.imgProfile" class="img-responsive profile-img">
+                    <div class="d-flex flex-column flex-md-row">
+                      <div class="profile-img-container">
+                        <img [src]="card.imgProfile" class="img-responsive profile-img">
+                      </div>
+                      
                       <div class="profile-name">
                         <h4 class="card-title">{{ card.title }}</h4>
                         <p class="card-text">{{ card.description }}</p>
@@ -37,7 +40,7 @@
                   </div>
                   <div class="card-image-container">
                     <img [src]="card.imageSrc" class="card-img-bottom card-recipe-img" >
-                    <div class="recipe-icons-container d-flex mt-2 pb-4">
+                    <div class="recipe-icons-container d-flex mt-2">
                       <i class="bi bi-hand-thumbs-up"> Like</i> 
                       <span class="empty-space-between-lg"></span>
                       <i class="bi bi-share"> Share</i></div>
