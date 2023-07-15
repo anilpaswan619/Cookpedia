@@ -205,7 +205,7 @@ body {
 .middle-container-img {
   background-image: url('assets/images/middle.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;
@@ -298,6 +298,10 @@ body {
   width: 3rem;
   display: inline-block;
 }
+.empty-space-between-lg1 {
+  width: 11rem;
+  display: inline-block;
+}
 
 .btn-scroll-top {
   background-color: var(--secondary-color);
@@ -363,6 +367,7 @@ body {
   .card-title {
     color: var(--other-color4);
     font-weight: 600;
+    font-size: 1.6rem;
   }
   .card-text {
     color: var(--other-color2);
@@ -370,6 +375,7 @@ body {
 }
 .card-para {
   color:black;
+  font-size: 1.1rem;
 }
 .stars {
   color: #ffc107;
@@ -384,10 +390,18 @@ body {
 }
 .comm-card-border {
   border: none;
+  margin-bottom: 3rem !important;
+  transition: all 0.5s ease;
+ 
+}
+.comm-card-border:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 .recipe-icons-container {
   .bi-hand-thumbs-up, .bi-share  {
-    color: var(--other-color2);
+    color: black;
     font-size: 1.2rem;
     font-style: normal;
   }
@@ -397,7 +411,61 @@ body {
     cursor: pointer;
   }
 }
+.carousel-controls {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  .bi-arrow-left {
+    color: var(--other-color2);
+    font-size: 1.7rem;
+    border-radius: 50%;
+    padding:1rem;
+    background-color:rgba(0, 0, 0, 0.15);
+    width: 4.25rem;
+    height: 4.25rem;
+    vertical-align: 0;
+  }
+  .bi-arrow-right {
+    color: white;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    padding:1rem;
+    background-color: var(--secondary-color);
+    width: 4.25rem;
+    height: 4.25rem;
+    vertical-align: 0;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    opacity: 0.9;
+    width: unset !important;
+  }
+  .carousel-control-next:hover, 
+  .carousel-control-prev:hover {
+    opacity: 1;
+  }
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: var(--secondary-color);
 
+}
+.carousel-indicators {
+  margin-bottom: 0;
+  margin-left: 6% !important;
+}
+.carousel-indicators [data-bs-target] {
+
+  width: 18rem;
+  height: 4px;
+  margin-right: 0px; 
+  margin-left: 0px;
+  border-radius: 10px;
+}
+.carousel-caption {
+  bottom: -1.6rem;
+  display: flex;
+  margin-left: -9rem;
+  font-weight: 600;
+}
 
 
 
