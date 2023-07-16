@@ -404,11 +404,18 @@ body {
     color: black;
     font-size: 1.2rem;
     font-style: normal;
+    width: 5rem;
   }
   .bi-hand-thumbs-up:hover,
    .bi-share:hover {
     color: var(--secondary-color);
     cursor: pointer;
+  }
+  .bi-hand-thumbs-up-fill {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-style: normal;
+    width: 5rem;
   }
 }
 .carousel-controls {
@@ -466,6 +473,9 @@ body {
   margin-left: -9rem;
   font-weight: 600;
 }
+
+
+
 
 
 

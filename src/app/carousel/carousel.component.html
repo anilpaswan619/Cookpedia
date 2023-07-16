@@ -38,7 +38,7 @@
                   <div class="card-image-container">
                     <img [src]="card.imageSrc" class="card-img-bottom card-recipe-img" >
                     <div class="recipe-icons-container d-flex mt-2">
-                      <i class="bi bi-hand-thumbs-up"> Like</i> 
+                      <i class="bi bi-hand-thumbs-up" [ngClass]="{'bi-hand-thumbs-up-fill': card.liked, 'bi-hand-thumbs-up': !card.liked}" (click)="likeButton(card)"> {{card.liked ? 'Liked' : 'Like'}}</i> 
                       <span class="empty-space-between-lg"></span>
                       <i class="bi bi-share"> Share</i></div>
                   </div>
