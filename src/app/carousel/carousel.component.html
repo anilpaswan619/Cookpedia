@@ -18,7 +18,7 @@
               <div class="col-md-6" *ngFor="let card of item.cards">
                 <div class="card p-5 comm-card-border ">
                   <div class="card-body">
-                    <div class="d-flex flex-column flex-md-row">
+                    <div class="d-flex profile-details-container">
                       <div class="profile-img-container">
                         <img [src]="card.imgProfile" class="img-responsive profile-img">
                       </div>
@@ -28,7 +28,7 @@
                         <p class="card-text">{{ card.description }}</p>
                       </div>
                     </div>
-                    <div class="stars mt-2">
+                    <div class="stars">
                       <i class="bi bi-star-fill p-1"></i>
                       <i class="bi bi-star-fill p-1"></i>
                       <i class="bi bi-star-fill p-1"></i>
