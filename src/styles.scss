@@ -476,6 +476,36 @@ body {
 }
 
 
+.shape-container {
+  position: relative;
+  border-bottom: 1px solid var(--other-color2);
+}
+.shape-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.shape {
+  position: absolute;
+  z-index: -1;
+}
+.text-primary-dark {
+  --bs-text-opacity: 1;
+  color: var(--primary-color);
+}
+.shape-bottom>svg {
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+.shape[class*=text-]>svg [fill]:not([fill=none]) {
+  fill: currentColor!important;
+}
+
+
+
 
 
 
