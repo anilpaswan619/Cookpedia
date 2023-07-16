@@ -14,7 +14,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item" [class.active]="i === 0" [attr.data-bs-interval]="10000" *ngFor="let item of carouselItems; let i = index">
-            <div class="row">
+            <div class="row g-0">
               <div class="col-md-6" *ngFor="let card of item.cards">
                 <div class="card p-5 comm-card-border ">
                   <div class="card-body">
@@ -29,11 +29,8 @@
                       </div>
                     </div>
                     <div class="stars">
-                      <i class="bi bi-star-fill p-1"></i>
-                      <i class="bi bi-star-fill p-1"></i>
-                      <i class="bi bi-star-fill p-1"></i>
-                      <i class="bi bi-star-fill p-1"></i>
-                      <i class="bi bi-star-fill p-1"></i>
+                      <i class="bi bi-star-fill p-1" *ngFor="let _ of [1, 2, 3, 4, 5]"></i>
+                      
                     </div>
                    
                     <p class="card-text card-para mt-3">{{ card.lastUpdated }}</p>
@@ -73,4 +70,4 @@
     </div>
   </div>
 </div>
-<div class="empty-space-50"></div>
+<div class="empty-space-40"></div>
