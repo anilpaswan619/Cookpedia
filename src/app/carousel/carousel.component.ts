@@ -25,7 +25,7 @@ export class CarouselComponent {
       description: 'Some representative placeholder content for the first slide.',
       cards: [
         {imgProfile:'/assets/images/profile6.jpg', title: 'Fresh Crunchy Veggy With Toast', description: 'Mellissa Bay', 
-        lastUpdated: `I tried this Recipe, and It’s the Only Side Dish I Want to Have for. We've enjoyed
+        lastUpdated: `I tried this recipe, and It’s the only side dish I want to have. We've enjoyed
          a few healthy breakfast while visiting
           . We enjoyed it a lot and everyone loves it so much!` , imageSrc: '/assets/images/comm-img1.jpg' },
         {imgProfile:'/assets/images/profile3.jpg', title: 'Fried Rice With Boiled Eggs', description: 'Anne Smith',

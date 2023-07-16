@@ -513,7 +513,7 @@ body {
     font-size: 2.5rem;
  }
   .nav-link:hover {
-  color:#ffcc33;
+  color: var(--other-color4);
 }
 .navbar-header-text:hover {
   background-color: transparent;
@@ -538,6 +538,9 @@ body {
 }
 .profile-name {
    margin-left: 0; 
+}
+.card-para {
+  text-align: justify;
 }
 }
 @media (max-width: 991px) and (min-width: 768px) {
