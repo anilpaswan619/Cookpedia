@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'dine-in-out';
-  loadedFeature = 'recipes';
-
-  onNavigate(featureSelected:string){
-     this.loadedFeature = featureSelected;
-  }
+  
 }

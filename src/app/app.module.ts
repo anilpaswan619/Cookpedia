@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,11 @@ import { MiddleSectionComponent } from './middle-section/middle-section.componen
 import { FooterComponent } from './footer/footer.component';
 import { ScrollTopComponent } from './footer/scroll-top/scroll-top.component';
 import {CarouselComponent} from './carousel/carousel.component';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+];
 
 @NgModule({
   declarations: [
@@ -32,12 +38,14 @@ import {CarouselComponent} from './carousel/carousel.component';
     FooterComponent,
     ScrollTopComponent,
     CarouselComponent,
+    HomeComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
