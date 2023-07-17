@@ -1,11 +1,22 @@
-<div class="row">
+<div class="row added-item-container">
     <div class="col-xs-10">
         <app-shopping-edit (ingredientAdded)=" onIngredientAdded($event)"></app-shopping-edit>
         <hr>
+        <h4 class="fw-bold text-center mt-2 pb-5">Added Items</h4>
         <ul class="list-group">
-            <a class="cursor list-group-item" *ngFor="let ingredient of ingredients">
-                {{ ingredient.name }} ({{ ingredient.amount}})
-            </a>
-        </ul>
+            <li class="list-group-item" *ngFor="let ingredient of ingredients">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h6 class="mb-1">{{ ingredient.name }}</h6>
+                  <p class="mb-0">{{ ingredient.ingredient }} ({{ ingredient.quantity }})</p>
+                </div>
+                <div>
+                  <p class="mb-0">{{ ingredient.amount }}.00 INR</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
     </div>
 </div>
+<div class="empty-space-50"></div>
