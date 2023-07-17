@@ -1,6 +1,6 @@
 Here's the live hosted site https://cookpedia-anil.vercel.app
 
-# DineInOut
+# Cookpedia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
