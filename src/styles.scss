@@ -67,9 +67,8 @@ body {
   margin: 0;
 }
 
-
  .recipe-img-detail-size {
-   max-width: 40%;
+   max-width: 45%;
    border-radius: 0.75rem;
  }
 
@@ -709,6 +708,9 @@ body {
    max-width: 114%;
     width: 100%;
   }
+  .recipe-img-detail-size {
+    max-width: 70%;
+  }
  
 }
 @media (max-width: 767px) {
@@ -738,5 +740,8 @@ body {
 }
 .mobile-empty-space-40 {
 margin-top: 3.9rem;
+}
+.recipe-img-detail-size {
+  max-width: 100%;
 }
 }
