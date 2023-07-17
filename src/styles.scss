@@ -74,8 +74,18 @@ body {
 
  .header-bg {
   background-color: #295846;
-  
+
+ .nav-link.active:hover {
+    color: #295846;
+  }
+   .nav-link.active  {
+   background-color: white;
+   color: #295846;
+   border-radius: 3px;
+  }
  }
+
+
  .navbar-header-text {
   color: #fff;
  }
@@ -93,11 +103,11 @@ body {
   color: #295846;
   border-radius: 3px;
  }
- .navbar-header-text:focus{
-  background-color: white;
-  color: #295846;
-  border-radius: 3px;
- }
+//  .navbar-header-text:focus{
+//   background-color: white;
+//   color: #295846;
+//   border-radius: 3px;
+//  }
  .cook-text {
   font-size:1.3rem;
   vertical-align: sub;

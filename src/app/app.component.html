@@ -1,1 +1,9 @@
-<app-home></app-home>
+<app-header></app-header>
+
+<div class="container" *ngIf="isContainerRoute()">
+    <router-outlet></router-outlet>
+</div>
+  
+<router-outlet *ngIf="!isContainerRoute()"></router-outlet>
+
+<app-footer></app-footer>
