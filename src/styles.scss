@@ -681,6 +681,13 @@ body {
   .nav-link:hover {
   color: var(--other-color4);
 }
+.nav-link.active:hover {
+  color: var(--other-color4);
+}
+ .nav-link.active  {
+ color: var(--other-color4) !important;
+ background-color: transparent !important;
+}
 .navbar-header-text:hover {
   background-color: transparent;
 }
