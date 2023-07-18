@@ -503,6 +503,7 @@ body {
   position: absolute;
   z-index: -1;
 }
+
 .text-primary-dark {
   --bs-text-opacity: 1;
   color: var(--primary-color);
@@ -521,7 +522,7 @@ body {
 .added-item-container {
   .list-group {
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   
   .list-group-item {
@@ -636,6 +637,13 @@ body {
 
 
 
+/* ============ Media Query ================ */
+
+@media (min-width: 767px){
+  .shape {
+    height: 8rem;
+   }
+}
 
 @media (max-width: 1400px) and (min-width: 992px) {
   .comm-card-border{
@@ -644,7 +652,7 @@ body {
       height: 72vh;
      }
   }
-
+ 
 }
 @media (max-width: 992px) and (min-width: 758px) {
   .comm-card-border{
