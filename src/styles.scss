@@ -503,7 +503,14 @@ body {
   position: absolute;
   z-index: -1;
 }
-
+.shape-height-footer {
+  height: unset;
+  position: absolute;
+  z-index: -1;
+}
+.shape-height-footer[class*=text-]>svg [fill]:not([fill=none]) {
+  fill: currentColor!important;
+}
 .text-primary-dark {
   --bs-text-opacity: 1;
   color: var(--primary-color);
@@ -641,7 +648,7 @@ body {
 
 @media (min-width: 767px){
   .shape {
-    height: 8rem;
+    height: 10rem;
    }
 }
 
@@ -661,7 +668,9 @@ body {
       height:90vh;
      }
   }
-
+  .shape {
+    height: 8rem;
+  }
 }
 @media (max-width:1199px){
   .carousel-indicators [data-bs-target] {
