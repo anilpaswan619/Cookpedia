@@ -1,73 +1,76 @@
-<div class="empty-space-30"></div>
-<div class="row">
-  <div class="col-md-12 col-xs-12">
-    <h1 class="fw-bold header-text-h1 text-center">Fresh From Our Community</h1>
+
+<div class="container">
+  <div class="empty-space-30"></div>
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <h1 class="fw-bold header-text-h1 text-center">Fresh From Our Community</h1>
+    </div>
   </div>
-</div>
-<div class="empty-space-10"></div>
-<div class="row">
-  <div class="col-xs-12">
-    <div class="row">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" [attr.data-bs-target]="'#carouselExampleDark'" [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-current]="i === 0 ? 'true' : null" [attr.aria-label]="'Slide ' + (i + 1).toString()" *ngFor="let indicator of indicators; let i = index"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item" [class.active]="i === 0" [attr.data-bs-interval]="10000" *ngFor="let item of carouselItems; let i = index">
-            <div class="row g-0">
-              <div class="col-md-6" *ngFor="let card of item.cards">
-                <div class="card p-5 comm-card-border ">
-                  <div class="card-body">
-                    <div class="d-flex profile-details-container">
-                      <div class="profile-img-container">
-                        <img [src]="card.imgProfile" class="img-responsive profile-img">
+  <div class="empty-space-10"></div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="row">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" [attr.data-bs-target]="'#carouselExampleDark'" [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-current]="i === 0 ? 'true' : null" [attr.aria-label]="'Slide ' + (i + 1).toString()" *ngFor="let indicator of indicators; let i = index"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item" [class.active]="i === 0" [attr.data-bs-interval]="10000" *ngFor="let item of carouselItems; let i = index">
+              <div class="row g-0">
+                <div class="col-md-6" *ngFor="let card of item.cards">
+                  <div class="card p-5 comm-card-border ">
+                    <div class="card-body">
+                      <div class="d-flex profile-details-container">
+                        <div class="profile-img-container">
+                          <img [src]="card.imgProfile" class="img-responsive profile-img">
+                        </div>
+                        
+                        <div class="profile-name">
+                          <h4 class="card-title">{{ card.title }}</h4>
+                          <p class="card-text">{{ card.description }}</p>
+                        </div>
                       </div>
-                      
-                      <div class="profile-name">
-                        <h4 class="card-title">{{ card.title }}</h4>
-                        <p class="card-text">{{ card.description }}</p>
+                      <div class="stars">
+                        <i class="bi bi-star-fill p-1" *ngFor="let _ of [1, 2, 3, 4, 5]"></i>
+                        
                       </div>
+                     
+                      <p class="card-text card-para mt-3">{{ card.lastUpdated }}</p>
                     </div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill p-1" *ngFor="let _ of [1, 2, 3, 4, 5]"></i>
-                      
+                    <div class="card-image-container">
+                      <img [src]="card.imageSrc" class="card-img-bottom card-recipe-img" >
+                      <div class="recipe-icons-container d-flex mt-2">
+                        <i class="bi bi-hand-thumbs-up" [ngClass]="{'bi-hand-thumbs-up-fill': card.liked, 'bi-hand-thumbs-up': !card.liked}" (click)="likeButton(card)"> {{card.liked ? 'Liked' : 'Like'}}</i> 
+                        <span class="empty-space-between-lg"></span>
+                        <i class="bi bi-share"> Share</i></div>
                     </div>
-                   
-                    <p class="card-text card-para mt-3">{{ card.lastUpdated }}</p>
-                  </div>
-                  <div class="card-image-container">
-                    <img [src]="card.imageSrc" class="card-img-bottom card-recipe-img" >
-                    <div class="recipe-icons-container d-flex mt-2">
-                      <i class="bi bi-hand-thumbs-up" [ngClass]="{'bi-hand-thumbs-up-fill': card.liked, 'bi-hand-thumbs-up': !card.liked}" (click)="likeButton(card)"> {{card.liked ? 'Liked' : 'Like'}}</i> 
-                      <span class="empty-space-between-lg"></span>
-                      <i class="bi bi-share"> Share</i></div>
-                  </div>
-                  </div>
-                  
-               
+                    </div>
+                    
+                 
+                </div>
+              </div>
+              <div class="carousel-caption">
+                <h5>{{ item.label }}</h5>  
               </div>
             </div>
-            <div class="carousel-caption">
-              <h5>{{ item.label }}</h5>  
-            </div>
           </div>
+          <div class="carousel-controls">
+   
+           
+  
+          <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleDark'" data-bs-slide="prev" (click)="prevSlide()">
+            <i class="bi bi-arrow-left" title="Previous"></i>
+            
+          </button>
+          <span class="empty-space-between-lg1"></span>
+          <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleDark'" data-bs-slide="next" (click)="nextSlide()">
+            <i class="bi bi-arrow-right" title="Next"></i>
+      
+          </button>
         </div>
-        <div class="carousel-controls">
- 
-         
-
-        <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleDark'" data-bs-slide="prev" (click)="prevSlide()">
-          <i class="bi bi-arrow-left" title="Previous"></i>
-          
-        </button>
-        <span class="empty-space-between-lg1"></span>
-        <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleDark'" data-bs-slide="next" (click)="nextSlide()">
-          <i class="bi bi-arrow-right" title="Next"></i>
-    
-        </button>
-      </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="empty-space-40"></div>
 </div>
-<div class="empty-space-40"></div>
