@@ -638,6 +638,23 @@ body {
   }
   
 }
+.recipe-edit-details {
+  background: aliceblue;
+  width: 50%;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 0.7rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
 
 
 
